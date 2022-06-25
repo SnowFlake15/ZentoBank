@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css" />
+    
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link />
   </head>
@@ -19,13 +20,32 @@
               <h1>Zentobank</h1>
             </div>
             <div class="header-item">
-              <ul class="navigation">
-                <li><i>Home</i></li>
-                <li><i>Features</i></li>
-                <li><i>About Us</i></li>
-                <li><i>Investor Login</i></li>
-              </ul>
+              <!-- <ul class="navigation topnav" id="myTopnav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#converter">Features</a></li>
+                <li><a href="about-us">About Us</a></li>
+                <li><a>Investor Login</a></li>
+                <li class="icon" ><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a></li>
+              </ul> -->
+
+              <div class="topnav" id="myTopnav">
+              
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+                <div class="menu">
+                  <a href="#">Home</a>
+                  <a href="#converter">Features</a>
+                  <a href="about-us">About Us</a>
+                  <a>Investor Login</a>
+                </div>
+                
+              </div>
             </div>
+            
+          </div>
           </div>
         </div>
     </header>
@@ -67,12 +87,12 @@
             </div>
         </div>
     </section>
-    <section class="converter">
+    <section class="converter" id="converter">
         <div class="container">
             <div class="converter-items">
                 <div class="converter-item">
                     <h3>The best way to manage your finances remotely.</h3>
-                    <div>
+                    <div class="converter-video">
                         <video></video>
                         <button>SEE HOW IT WORKS</button>
                     </div>
@@ -80,7 +100,6 @@
                 <div class="converter-item">
                     <div class="currency-row-outer">
                         <div class="currency-converter">
-                          <h2>Currency Converter</h2>
                           <div class="field grid-50-50">
                             <div class="colmun col-left">
                               <input type="number" class="form-input" id="number" placeholder="00000">
@@ -143,6 +162,7 @@
         </div>
         </div>
     </section>
+    <script src="https://kit.fontawesome.com/57c1b31326.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
